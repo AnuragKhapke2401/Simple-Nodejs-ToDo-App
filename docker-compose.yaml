@@ -2,15 +2,12 @@ version: '3.8'
 
 services:
   app:
-    build:
-      context: . 
-      dockerfile: Dockerfile  
+    image: anuragkhapke2402/todo-app:latest  # <-- This will be replaced dynamically in the pipeline
     ports:
-      - "3000:3000"  
+      - "3000:3000"
     networks:
       - app-network
 
 networks:
   app-network:
     driver: bridge
-
