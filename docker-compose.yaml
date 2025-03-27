@@ -2,7 +2,8 @@ version: '3.8'
 
 services:
   app:
-    image: anuragkhapke2402/todo-app:latest  # <-- This will be replaced dynamically in the pipeline
+    build:
+      context: .  # <-- This specifies the directory where the Dockerfile is located
     ports:
       - "3000:3000"
     networks:
