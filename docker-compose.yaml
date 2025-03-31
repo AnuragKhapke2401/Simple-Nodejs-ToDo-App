@@ -2,8 +2,9 @@ version: '3.8'
 
 services:
   app:
-    build:
-      context: . # <-- This specifies the directory where the Dockerfile is located
+   # build:
+      # context: . # <-- This specifies the directory where the Dockerfile is located
+    image: anuragkhapke2402/todo-app:latest
     ports:
       - "3000:3000"
     networks:
